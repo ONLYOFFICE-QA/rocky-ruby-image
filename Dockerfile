@@ -39,7 +39,7 @@ RUN cd "ruby-$RUBY_VERSION" && \
     make test OPTS=-v && \
     make install
 
-ENV PATH "${HOME}/.rubies/ruby-master/bin":$PATH"
+ENV PATH "${HOME}/.rubies/ruby-master/bin":"$PATH"
 
 # don't create ".bundle" in all our apps
 ENV GEM_HOME /usr/local/bundle
