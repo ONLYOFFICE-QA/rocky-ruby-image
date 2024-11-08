@@ -12,6 +12,7 @@ RUN dnf install -y dnf-plugins-core \
                    epel-release && \
     dnf config-manager --set-enabled crb && \
     dnf -y install file-devel \
+                   file \
                    gcc \
                    gcc-c++ \
                    make \
