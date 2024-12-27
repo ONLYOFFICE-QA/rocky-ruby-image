@@ -3,10 +3,10 @@ LABEL org.opencontainers.image.authors=askonev007@gmail.com
 
 ENV HOME "/root"
 
-# https://www.ruby-lang.org/en/news/2024/04/23/ruby-3-3-1-released/
-ENV RUBY_VERSION 3.3.1
-ENV RUBY_DOWNLOAD_URL https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.1.tar.gz
-ENV RUBY_DOWNLOAD_SHA256 8dc2af2802cc700cd182d5430726388ccf885b3f0a14fcd6a0f21ff249c9aa99
+# https://www.ruby-lang.org/en/news/2024/12/25/ruby-3-4-1-released/
+ENV RUBY_VERSION 3.4.1
+ENV RUBY_DOWNLOAD_URL https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.1.tar.gz
+ENV RUBY_DOWNLOAD_SHA256 3d385e5d22d368b064c817a13ed8e3cc3f71a7705d7ed1bae78013c33aa7c87f
 
 RUN dnf install -y dnf-plugins-core \
                    epel-release && \
